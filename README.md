@@ -142,7 +142,7 @@ The starting memory usage was `564 KiB`.
 The ending memory usage was stable at `10,512 KiB`.
 
 ### Analysis
-Even though the algorithm was significantly different, the compiled size stayed relatively similar for both executables.
+Even though the algorithm was significantly different from the last attempt, the compiled size stayed relatively similar for both executables.
 
 The run time was signficantly better, and Rust only had a 0.2 second lead.
 
