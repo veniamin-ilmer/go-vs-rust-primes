@@ -12,7 +12,6 @@ As dove more into Go however, I started to doubt some of the efficiency.
 
 I tried building concurrent processes with a shared variable, and realized Go failed to stop race conditions of updating the variable at the same time.
 
---
 
 Up till now, I avoided Rust.. Rust seemed more difficult to program than Go.
 
@@ -22,7 +21,6 @@ Why have all these extra functions (map, iter, filter, etc), when all of this ca
 
 But with Rust being rated the [most loved language for the 3rd time in a row](https://insights.stackoverflow.com/survey/2018/#most-loved-dreaded-and-wanted), I decided to try it out.
 
---
 
 Although there was a learning curve, Rust is becoming my favorite language.
 
