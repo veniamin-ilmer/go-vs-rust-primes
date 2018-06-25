@@ -11,6 +11,6 @@ fn main() {
 }
 
 //Compiled: cargo build --release
-//6.0 sec
+//Run time: 6.0 sec
 //Memory Before: 564 K
 //Memory After: 10,512 K
