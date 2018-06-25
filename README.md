@@ -65,7 +65,7 @@ An efficient way to do this, is to iterate from 2 up to the square root of the n
 
 You start from 2, because we already know all numbers are divisible by 1.
 
-You end at the square of the number, because if there were no divisors up to that point, there can't be further divisors. (The only way that 6 is divisible into 12 is because a lower number - 2 is divisible by 12.)
+You end at the square of the number, because if there were no divisors up to that point, there can't be further divisors. (The only way that 6 is divisible into 12 is because a lower number: 2 is divisible by 12.)
 
 Another way to say "loop until you reach the square root of the number" is "loop until your iterator ^ 2 equals the number". I use this due to computers preferring working with integers over decimals.
 
