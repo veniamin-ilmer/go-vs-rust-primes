@@ -58,7 +58,7 @@ There are several ways to do this calculation. I've built these ways in Rust and
 
 To make things fair, I made sure to use exactly the same algorithm in both languages.
 
-## Attempt 1: Simply calculate if each number is prime.
+## Attempt 1: Simply calculate if each number is prime
 The way to tell if a number is prime, is by trying to divide it by different numbers. If it's not divisible by any numbers, it's prime.
 
 An efficient way to do this, is to iterate from 2 up to the square root of the number.
@@ -76,20 +76,20 @@ This algorithm was written in `prime_simple.go` and `prime_simple.rs` for Go and
 ### prime_simple.go
 go build -ldflags="-s -w" prime.go
 
-Compiled into 1,664 KiB.
+Compiled into `1,664 KiB`.
 
-It ran in 34.5 Seconds.
+It ran in `34.5 Seconds`.
 
-The total memory usage was 1,490 KiB.
+The total memory usage was `1,490 KiB`.
 
 ### prime_simple.rs
 cargo build --release
 
-Compiled into 152 KiB.
+Compiled into `152 KiB`.
 
-It ran in 31.9 Seconds.
+It ran in `31.9 Seconds`.
 
-The total memory usage was 550 KiB.
+The total memory usage was `550 KiB`.
 
 ### Analysis
 Although I stripped as much debugging information as Go allows, there is still some residual data, explaining the huge difference in size between the two compiled versions.
@@ -122,22 +122,22 @@ This algorithm was written in `prime_growing_memory.go` and `prime_growing_memor
 ### prime_growing_memory.go
 go build -ldflags="-s -w" prime.go
 
-Compiled into 1,664 KiB.
+Compiled into `1,664 KiB`.
 
-It ran in 6.2 seconds.
+It ran in `6.2 seconds`.
 
-The starting memory usage was 1,532 KiB.
-After rerunning the binary multiple times, I found that the ending memory usage kept ranging between 29,000 KiB and 45,000 KiB.
+The starting memory usage was `1,532 KiB`.
+After rerunning the binary multiple times, I found that the ending memory usage kept ranging between `29,000 KiB` and `45,000 KiB`.
 
 ### prime_growing_memory.rs
 cargo build --release
 
-Compiled into 153 KiB.
+Compiled into `153 KiB`.
 
-It ran in 6.0 Seconds.
+It ran in `6.0 seconds`.
 
-The starting memory usage was 564 KiB.
-The ending memory usage was stable at 10,512 KiB.
+The starting memory usage was `564 KiB`.
+The ending memory usage was stable at `10,512 KiB`.
 
 ### Analysis
 Even though the algorithm was significantly different, the compiled size stayed relatively similar for both executables.
@@ -180,22 +180,22 @@ This algorithm was written in `prime_slice_memory.go` and `prime_slice_memory.rs
 ### prime_slice_memory.go
 go build -ldflags="-s -w" prime.go
 
-Compiled into 1,664 KiB.
+Compiled into `1,664 KiB`.
 
-It ran in 6.0 seconds.
+It ran in `6.0 seconds`.
 
-The starting memory usage was about 7,000 KiB.
-The ending memory usage was stable at about 16,900 KiB.
+The starting memory usage was about `7,000 KiB`.
+The ending memory usage was stable at about `16,900 KiB`.
 
 ### prime_slice_memory.rs
 go build -ldflags="-s -w" prime.go
 
-Compiled into 153 KiB.
+Compiled into `153 KiB`.
 
-It ran in 5.1 seconds.
+It ran in `5.1 seconds`.
 
-The starting memory usage was 576 KiB.
-The ending memory usage was stable at 10,516 KiB.
+The starting memory usage was `576 KiB`.
+The ending memory usage was stable at `10,516 KiB`.
 
 ### Analysis
 Compiled size remains the same as before.
