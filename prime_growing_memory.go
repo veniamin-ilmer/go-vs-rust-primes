@@ -19,8 +19,6 @@ func main() {
     }
   }
   fmt.Println(len(array_primes));
-  bufio.NewReader(os.Stdin).ReadBytes('\n')
-
 }
 
 //Compiled: go build -ldflags="-s -w"
