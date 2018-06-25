@@ -28,4 +28,4 @@ func main() {
 //Compiled: go build -ldflags="-s -w"
 //Run Time: 6.0 sec
 //Memory before: 7,000 K
-//Memory After: Ranges between 16,900 K
+//Memory After: 16,900 K
