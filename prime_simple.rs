@@ -1,5 +1,5 @@
 fn main() {
-  let count = (2..10000000).filter(|&p| is_prime(p)).count();
+  let count = (2..20000000).filter(|&p| is_prime(p)).count();
   println!("{}", count);
 }
 
@@ -8,5 +8,5 @@ fn is_prime(n: u64) -> bool {
 }
 
 //Compiled: cargo build --release
-//Run Time: 11.9 sec
-//Memory: 548 K
+//Run Time: 31.9 sec
+//Memory: 550 K
