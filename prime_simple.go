@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
   count := 0;
-  for i := 2; i < 10000000; i++ {
+  for i := 2; i < 20000000; i++ {
     if is_prime(i) {
       count += 1;
     }
@@ -22,5 +22,5 @@ func is_prime(value int) bool {
 }
 
 //Compiled: go build -ldflags="-s -w"
-//Runs in 12.9 seconds
-//Memory: 1488 K
+//Run Time: 34.5 sec
+//Memory: 1,490 K
