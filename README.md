@@ -109,7 +109,7 @@ For example, to check if 13 is prime:
 
 If you can remember which numbers you found were prime earlier, you can use those numbers to check for future primes.
 
-To be memory efficient, since we don't know exactly how many numbers we need to remember, we can just create a growing array.
+To be memory efficient, since we don't know exactly how many numbers we need to remember, we can create a growing array.
 
 Both Rust and Go have a way to build a growing array.
 
