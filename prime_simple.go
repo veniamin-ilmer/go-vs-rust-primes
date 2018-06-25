@@ -21,5 +21,6 @@ func is_prime(value int) bool {
     return true
 }
 
+//Compiled: go build -ldflags="-s -w"
 //Runs in 12.9 seconds
-//Memory: 548 K
+//Memory: 1488 K
