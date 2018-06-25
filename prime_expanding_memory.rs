@@ -14,11 +14,3 @@ fn main() {
 //6.0 sec
 //Memory Before: 564 K
 //Memory After: 10,512 K
-
-/* Pause code to measuring memory.
-use std::io;
-use std::io::prelude::*;
-
-let mut stdin = io::stdin();
-let _ = stdin.read(&mut [0u8]).unwrap();
-*/
