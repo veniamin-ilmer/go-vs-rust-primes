@@ -48,7 +48,7 @@ Count up all the numbers to 20,000,000 that are prime.
 
 As an example, if you look at numbers up to 10, you find that these are prime:
 
-2, 3, 5, 7
+> 2, 3, 5, 7
 
 So that means there are 4 prime numbers in the range up to 10.
 
@@ -127,6 +127,7 @@ Compiled into `1,664 KiB`.
 It ran in `6.2 seconds`.
 
 The starting memory usage was `1,532 KiB`.
+
 After rerunning the binary multiple times, I found that the ending memory usage kept ranging between `29,000 KiB` and `45,000 KiB`.
 
 ### prime_growing_memory.rs
@@ -137,6 +138,7 @@ Compiled into `153 KiB`.
 It ran in `6.0 seconds`.
 
 The starting memory usage was `564 KiB`.
+
 The ending memory usage was stable at `10,512 KiB`.
 
 ### Analysis
@@ -185,6 +187,7 @@ Compiled into `1,664 KiB`.
 It ran in `6.0 seconds`.
 
 The starting memory usage was about `7,000 KiB`.
+
 The ending memory usage was stable at about `16,900 KiB`.
 
 ### prime_slice_memory.rs
@@ -195,6 +198,7 @@ Compiled into `153 KiB`.
 It ran in `5.1 seconds`.
 
 The starting memory usage was `576 KiB`.
+
 The ending memory usage was stable at `10,516 KiB`.
 
 ### Analysis
