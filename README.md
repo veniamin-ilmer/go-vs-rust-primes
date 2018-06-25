@@ -154,7 +154,7 @@ Adding 9,927 to the initial 564 = 10,490 KiB. We see that Rust's increase in mem
 
 On the other hand, Go used 3 to 4.5 times as much data.
 
-Understandibly, this was probably because Go's garbage collector made the determination not to clean up memory with old arrays.
+This was probably because Go's garbage collector made the determination not to clean up memory with old arrays.
 
 ## Attempt 3: Slices
 Go pushes the concept: Don't use Arrays. Everything should be a slice.
