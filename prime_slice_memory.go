@@ -1,28 +1,30 @@
 package main
 
-import "fmt"
-
 func main() {
+	const N = 20000000
 
-  var array_primes [20000000] int;
-  var slice_primes []int = array_primes[:0];
+	var primes [N]int
+	var head int
 
-  for i := 2; i < 20000000; i++ {
-    is_prime := true;
-    for j := 0; j < len(slice_primes) && slice_primes[j] * slice_primes[j] <= i; j++ {
-      if i % slice_primes[j] == 0 {
-        is_prime = false;
-        break;
-      }
-    }
-    if is_prime {
-      slice_length := len(slice_primes);
-      slice_primes = slice_primes[:slice_length + 1];  //Extend slice by 1.
-      slice_primes[slice_length] = i; //Set value
-    }
-  }
-  fmt.Println(len(slice_primes));
+	for num := 2; num < N; num++ {
+		isPrime := true
+		for _, prime := range primes[:head] {
+			if prime*prime > num {
+				break
+			}
+			if num%prime == 0 {
+				isPrime = false
+				break
+			}
+		}
 
+		if isPrime {
+			primes[head] = num
+			head++
+		}
+	}
+
+	println(head)
 }
 
 //Compiled: go build -ldflags="-s -w"
