@@ -73,7 +73,7 @@ Finally, for efficiency, break out early if you find any divisors.
 
 This algorithm was written in `prime_simple.go` and `prime_simple.rs` for Go and Rust.
 
-### prime_simple.go
+### [prime_simple.go](prime_simple.go)
 go build -ldflags="-s -w" prime.go
 
 Compiled into `1,664 KiB`.
@@ -82,7 +82,7 @@ It ran in `34.5 Seconds`.
 
 The total memory usage was `1,490 KiB`.
 
-### prime_simple.rs
+### [prime_simple.rs](prime_simple.rs)
 cargo build --release
 
 Compiled into `152 KiB`.
@@ -119,7 +119,7 @@ In Rust, any time you want to add a value to an array, (a growable array - a Vec
 
 This algorithm was written in `prime_growing_memory.go` and `prime_growing_memory.rs` for Go and Rust.
 
-### prime_growing_memory.go
+### [prime_growing_memory.go](prime_growing_memory.go)
 go build -ldflags="-s -w" prime.go
 
 Compiled into `1,664 KiB`.
@@ -130,7 +130,7 @@ The starting memory usage was `1,532 KiB`.
 
 After rerunning the binary multiple times, I found that the ending memory usage kept ranging between `29,000 KiB` and `45,000 KiB`.
 
-### prime_growing_memory.rs
+### [prime_growing_memory.rs](prime_growing_memory.rs)
 cargo build --release
 
 Compiled into `153 KiB`.
@@ -179,7 +179,7 @@ In both cases, I created an integer array space of 20,000,000. This is because, 
 
 This algorithm was written in `prime_slice_memory.go` and `prime_slice_memory.rs` for Go and Rust.
 
-### prime_slice_memory.go
+### [prime_slice_memory.go](prime_slice_memory.go)
 go build -ldflags="-s -w" prime.go
 
 Compiled into `1,664 KiB`.
@@ -190,8 +190,8 @@ The starting memory usage was about `7,000 KiB`.
 
 The ending memory usage was stable at about `16,900 KiB`.
 
-### prime_slice_memory.rs
-go build -ldflags="-s -w" prime.go
+### [prime_slice_memory.rs](prime_slice_memory.rs)
+cargo build --release
 
 Compiled into `153 KiB`.
 
