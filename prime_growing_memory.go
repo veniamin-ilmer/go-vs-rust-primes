@@ -1,24 +1,28 @@
 package main
 
-import "fmt"
-
 func main() {
+	const N = 20000000
 
-  var array_primes []int;
+	primes := make([]int, 0, N)
 
-  for i := 2; i < 20000000; i++ {
-    is_prime := true;
-    for j := 0; j < len(array_primes) && array_primes[j] * array_primes[j] <= i; j++ {
-      if i % array_primes[j] == 0 {
-        is_prime = false;
-        break;
-      }
-    }
-    if is_prime {
-      array_primes = append(array_primes, i);
-    }
-  }
-  fmt.Println(len(array_primes));
+	for num := 2; num < N; num++ {
+		isPrime := true
+		for _, prime := range primes {
+			if prime*prime > num {
+				break
+			}
+			if num%prime == 0 {
+				isPrime = false
+				break
+			}
+		}
+
+		if isPrime {
+			primes = append(primes, num)
+		}
+	}
+
+	println(len(primes))
 }
 
 //Compiled: go build -ldflags="-s -w"
